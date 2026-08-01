@@ -19,7 +19,7 @@ st.write("Enter the wine chemical properties to predict quality.")
 # ----------------------------------
 @st.cache_resource
 def load_artifacts():
-    with open("New_RF_model.pkl", "rb") as f:
+    with open("New_rf_model.pkl", "rb") as f:
         model = pickle.load(f)
 
     with open("New_scaler.pkl", "rb") as f:
